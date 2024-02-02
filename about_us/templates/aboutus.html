@@ -2,59 +2,83 @@
 {% load static %} 
 {% block content %} 
 
+<h1 class="text-center mt-2 ">Welcome to <span class="nameofresbold">Pizza vai </span></h1>
+ <!--About Section -->
+ <section id="About" class="mid-section">
+  
+  <div class="about-me">
+      <h1>Who We are? </h1>
+      <p><span class="nameofres">Pizza vai </span> is re-inventing the art of cooking. The food is a way to tell his story
+          and it changes with each new chapter of his life. Recently settling down in the San Fransisco Bay area
+          is another new opportunity for this private chef</p>
+      
+  </div>
+  <div class="about-me">
+    <img src="{% static 'images/res.jpg' %}" >
+  </div>
+</section>
+  <!--About Section End -->
+
 <div class="container  ">
-    <div class="row">
-      <div class="col m-5">
-        <img src="{% static 'images/contactus.jpg' %}" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col m-5">
-        <form class="row g-3">
-            <div class="col-md-12">
-              <label for="inputName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="inputName">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out (Trams and Conditions)
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
-        
-      </div>
+  <div class="row">
+    <div class="col m-5">
+      <img src="{% static 'images/contactus.jpg' %}" class="img-fluid" alt="Responsive image">
     </div>
+    <div class="col m-5">
+      <form class="row g-3">
+          <div class="col-md-12">
+            <h2>Book your table online</h2>
+            <label for="inputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inputName">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label">Date</label>
+            <input type="date" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Person</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>2-3</option>
+              <option>4-5</option>
+              <option>6-9</option>
+              <option>10-15</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputZip" class="form-label">Time</label>
+            <input type="time" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out (Trams and Conditions)
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Book Now</button>
+          </div>
+        </form>
+      
+    </div>
+  </div>
 
 {% endblock %}
+
+
